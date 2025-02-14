@@ -30,3 +30,16 @@ $(document).ready(function () {
         updateMainImage(currentIndex);
     });
 });
+
+function setActive(element) {
+    // ลบคลาส active ออกจากปุ่มทั้งหมด
+    document.querySelectorAll('.custom-pill-nav .nav-link').forEach(btn => {
+      btn.classList.remove('active');
+    });
+  
+    // เพิ่มคลาส active ให้กับปุ่มที่ถูกคลิก
+    element.classList.add('active');
+  }
+
+  
+  

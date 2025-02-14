@@ -1,5 +1,5 @@
 .search-container {
-    background-color: #EEF3FF; /* พื้นหลังสีฟ้าอ่อน */
+    background-color: #EEF3FF; 
     border-radius: 12px;
     max-width: 1300px;
     margin: auto;
@@ -29,19 +29,19 @@
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* ขยับขึ้นเมื่อ hover */
+    transform: translateY(-5px); 
 }
 
 .card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 180px;
-    object-fit: cover; /* ทำให้ภาพพอดีกับขนาด */
+    object-fit: cover; 
 }
 
 .price {
     font-size: 20px;
-    color: #007bff; /* สีฟ้าของราคา */
+    color: #007bff; 
     font-weight: bold;
 }
 
@@ -53,9 +53,9 @@
 
 
 .card-footer {
-    border-top: none !important; /* ลบเส้นขอบด้านบน */
-    background-color: transparent !important; /* ลบสีพื้นหลัง */
-    padding: 10px; /* ปรับระยะห่างให้ดูดีขึ้น */
+    border-top: none !important; 
+    background-color: transparent !important; 
+    padding: 10px; 
 }
 
 
@@ -116,3 +116,85 @@
 }
 
 
+.btn-primary {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.input-group-text {
+    background: #eef3ff;
+    border-radius: 10px 0 0 10px;
+}
+
+.form-select {
+    border-radius: 0 10px 10px 0;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+
+.product-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+}
+
+.product-card .btn-primary {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.product-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+@media (min-width: 426px) {
+    .product-scroll-container {
+        overflow-x: visible; 
+    }
+    .product-row {
+        flex-wrap: wrap; 
+    }
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}

@@ -23,12 +23,13 @@
 
 <body>
         @include('layout.menu')
-            <div class="container p-10">
+            <div class="container">
                 @yield('content')
             </div>
         @include('layout.footer')
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('/assets/js/home.js') }}"></script> 
 
-    <script src="{{ asset('/assets/js/dashboardjs/profile.js') }}"></script> 
 </body>
 </html>

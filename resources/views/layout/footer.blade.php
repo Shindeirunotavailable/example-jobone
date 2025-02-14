@@ -32,7 +32,3 @@
     </div>
 </section>
 
-
-<div class="scrollToHome" style="cursor: pointer;">
-    <i class="fas fa-angle-up"></i>
-</div>

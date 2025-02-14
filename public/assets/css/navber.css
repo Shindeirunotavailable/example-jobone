@@ -9,3 +9,77 @@
 .mr-60{
     margin-right: 60px;
 }
+
+.rounded-button {
+    border-radius: 50px; /* ทำให้เป็นวงรี */
+    padding: 10px 20px; /* ปรับขนาดของปุ่ม */
+  }
+
+  .custom-pill-nav {
+    background-color: #EEF3FF; /* พื้นหลังสีฟ้าอ่อน */
+    padding: 8px;
+    border-radius: 50px; /* ทำให้ขอบเป็นวงรี */
+    display: inline-flex;
+  }
+  
+  .custom-pill-nav .nav-link {
+    border-radius: 50px; /* ทำให้ปุ่มเป็นวงรี */
+    color: #6C757D; /* สีเทาอ่อน */
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  
+  .custom-pill-nav .nav-link.active {
+    background-color: #4285F4; /* สีฟ้าสำหรับปุ่มที่เลือก */
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* เงาเล็กน้อย */
+  }
+  
+  .navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาด้านล่าง */
+    background-color: #ffffff; /* พื้นหลังสีขาว (ถ้าต้องการ) */
+    position: sticky; /* ทำให้ Navbar ติดกับด้านบน */
+    top: 0;
+    z-index: 1000;
+  }
+
+
+  @media (max-width: 425px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+  
+    .navbar-brand {
+      margin: 0 auto; /* จัดตำแหน่งโลโก้ตรงกลาง */
+    }
+  
+    .nav-pills {
+      display: none; /* ซ่อนเมนูหลัก */
+    }
+  
+    .menu-icon {
+      display: block; /* แสดงไอคอนเมนู */
+    }
+  
+    .cart-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #4285F4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .cart-button i {
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  
+  

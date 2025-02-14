@@ -1,0 +1,118 @@
+.search-container {
+    background-color: #EEF3FF; /* พื้นหลังสีฟ้าอ่อน */
+    border-radius: 12px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.input-group-text {
+    background-color: white;
+    border-right: none;
+}
+
+.form-select {
+    border-left: none;
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.product-card {
+    border-radius: 10px; /* มุมมน */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* เงา */
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* ขยับขึ้นเมื่อ hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 180px;
+    object-fit: cover; /* ทำให้ภาพพอดีกับขนาด */
+}
+
+.price {
+    font-size: 20px;
+    color: #007bff; /* สีฟ้าของราคา */
+    font-weight: bold;
+}
+
+.btn-primary {
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+
+.card-footer {
+    border-top: none !important; /* ลบเส้นขอบด้านบน */
+    background-color: transparent !important; /* ลบสีพื้นหลัง */
+    padding: 10px; /* ปรับระยะห่างให้ดูดีขึ้น */
+}
+
+
+.product-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+.thumbnail-gallery img {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail-gallery img.active,
+.thumbnail-gallery img:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+
+

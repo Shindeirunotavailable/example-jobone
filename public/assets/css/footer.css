@@ -1,0 +1,15 @@
+.bg-footer-detail{
+    background: #6097f0;
+}
+
+.bg-footer{
+    background: #4285F4;
+}
+
+.center-footer{
+    justify-content: center
+}
+
+.font-white{
+    color: white;
+}
